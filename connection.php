@@ -1,7 +1,7 @@
 <?php      
     $host = "localhost";  
     $user = "root";  
-    $password = 'MBAFOR41*123#HHHH';  
+    $password = 'n!LM6M!mHKuO';  
     $db_name = "home_maintenance";  
       
     $conn = mysqli_connect($host, $user, $password, $db_name);  
