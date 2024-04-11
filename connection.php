@@ -1,15 +1,17 @@
-<?php      
+<?php
+// Database credentials
    $servername = "localhost";
-   $username = "bitnami";
+   $username = "root";
    $password = "n!LM6M!mHKuO";
-   $database = "home_maintenance";
-    
-    // Create connection
-   $conn = new mysqli($servername, $username, $password, $database);
-    
-    // Check connection
+   $dbname = "home_maintenance";
+   
+   // Create connection
+   $conn = new mysqli($servername, $username, $password, $dbname);
+   
+   // Check connection
    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    }
-     
+       die("Connection failed: " . $conn->connect_error);
+   }
+   echo "Connected successfully";
 ?>
+
