@@ -10,8 +10,8 @@
    
    // Check connection
    if ($conn->connect_error) {
-       die("Connection failed: " . $conn->connect_error);
+       echo "Error connecting";
    }
-   echo "Connected successfully";
+   
 ?>
-    //cs341webtech
+
