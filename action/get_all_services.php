@@ -4,7 +4,7 @@ include '../settings/connection.php';
 function getservicesById($UserID) {
     global $conn;
     
-    $sql = "SELECT * FROM servicerequests where user_id = $UserID";
+    $sql = "SELECT * FROM servicerequests WHERE user_id = $UserID ";
 
     // Execute the query
     $result = $conn->query($sql);
