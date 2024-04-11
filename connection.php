@@ -1,11 +1,15 @@
 <?php      
-    $host = "localhost";  
-    $user = "root";  
-    $password = 'n!LM6M!mHKuO';  
-    $db_name = "home_maintenance";  
-      
-    $conn = mysqli_connect($host, $user, $password, $db_name);  
-    if(mysqli_connect_errno()) {  
-        die("Failed to connect with MySQL: ". mysqli_connect_error());  
-    }  
+   $servername = "localhost";
+    $username = "bitnami";
+    $password = "n!LM6M!mHKuO";
+    $database = "home_maintenance";
+    
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $database);
+    
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+     
 ?>
