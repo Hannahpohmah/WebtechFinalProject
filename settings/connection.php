@@ -1,16 +1,17 @@
-<?php      
-    $host = "localhost";  
-    $user = "root";  
-    $password = 'MBAFOR41*123#HHHH';  
-
-    $db_name = "home_maintenance";  
-
-      
-    $conn = mysqli_connect($host, $user, $password, $db_name);  
-    if(mysqli_connect_errno()) {  
-        echo "Error connecting";
-        die("Failed to connect with MySQL: ". mysqli_connect_error());  
-    }  
-
-
+<?php
+// Database credentials
+   $servername = "localhost";
+   $username = "root";
+   $password = "n!LM6M!mHKuO";
+   $dbname = "home_maintenance";
+   
+   // Create connection
+   $conn = new mysqli($servername, $username, $password, $dbname);
+   
+   // Check connection
+   if ($conn->connect_error) {
+       die("Connection failed: " . $conn->connect_error);
+   }
+   echo "Connected successfully";
+?>
     //cs341webtech
