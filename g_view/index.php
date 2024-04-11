@@ -300,7 +300,7 @@
 
                 <a href=".../g_view/home_register.php"><button class="cn">JOIN US</button></a>
 
-                <form class="form" action=".../action/login_action.php" method="POST">
+                <form class="form" action="../action/login_action.php" method="POST">
                     <h2>Login Here</h2>
                     <input type="email" name="email" placeholder="Enter Email Here">
                     <input type="password" name="password" placeholder="Enter Password Here">
