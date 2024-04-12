@@ -1,7 +1,3 @@
-# WebtechFinalProject
-Sure! Here's a sample README file for your project:
-
----
 
 # Maintenance Management System
 
