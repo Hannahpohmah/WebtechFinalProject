@@ -312,7 +312,7 @@
                         <a href="../g_view/home_forgotten_password.php">Forgotten password </a></p>
 
                     <p class="link">Don't have an account<br>
-                    <a href="../g_view/home_register.php">Sign up </a> here</a></p>
+                    <a href=".../g_view/home_register.php">Sign up </a> here</a></p>
 
                 </form>
                     </div>
