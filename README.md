@@ -8,13 +8,14 @@ This web application is a Maintenance Management System designed to help users m
 ## Features
 
 - **User Authentication**: Secure login and registration system for users based on roles.
-- **Dashboard_service providers**:view available service request and maintenance plans. View reviews, service requests,tasks for service providers and for normal  .
+- **Dashboard_service providers**:view available service request and maintenance plans made by users. check out your reviews 
 - **Dashboard_user(house keepers)**: have an overview of service categories, view maintenance history and a list of service providers  .
 - **Maintenance Plans**: Create, view, update, and delete maintenance plans.
-- **Scheduled Tasks**: Create, view, update, and delete services as well make emergency requests.
+- **Scheduled Tasks**: Create, view, update, and delete services as well as make emergency requests.
 - **Maintenance History**: Track maintenance history and view past maintenance activities.
+- **Accept jobs**: service providers can change the status of request made alerting the housekeeper they are available to perform the services.
 - **User Roles**: Different roles for users (e.g., housekeeper, service provider) with different permissions.
-- **reviews**: review service providers.
+- **reviews**: review service providers and further view their details.
 - **password reset**: reset password.
 
 ## Technologies Used
