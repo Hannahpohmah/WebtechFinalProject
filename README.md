@@ -28,7 +28,7 @@ This web application is a Maintenance Management System designed to help users m
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/yourusername/maintenance-management-system.git`
-2. Import the database schema from `database.sql` into your MySQL database.
+2. Import the database schema from `home_maintenance.sql` into your MySQL database.
 3. Update the database connection settings in `config.php` with your MySQL database credentials.
 4. Start the Apache web server and MySQL database server.
 5. Open the project in your web browser.
