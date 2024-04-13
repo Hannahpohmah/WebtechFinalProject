@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home maintenance app</title>
     <style>
         *{
@@ -11,19 +10,16 @@
 
         body{
             margin: absolute;
-            width: 70%;
+            width: 100%;
             height: 100vh;
-            background-color: #f0f0f0;
-            max-width: 50px;
         }
 
         .main {
             position: absolute;
             top: 0;
-            left: 100;
-            width: 50%;
+            left: 0;
+            width: 100%;
             height: 100%;
-           
         }
 
         .pictures {
@@ -40,7 +36,7 @@
             left: 0;
             width: 120%;
             height: 100%;
-            background: rgba(0, 0, 0, 8); /* Adjust the last value (0.5) for the desired transparency */
+            background: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for the desired transparency */
         }
 
         .navbar{
@@ -121,7 +117,7 @@
             width: 1200px;
             height: auto;
             margin: auto;
-            color: black;
+            color: #fff;
             position: relative;
         }
 
@@ -148,7 +144,7 @@
             background:  rgb(148, 148, 11);
             border: none;
             margin-bottom: 10px;
-            margin-left: 20px;
+            margin-left: -30px;
             font-size: 18px;
             border-radius: 10px;
             cursor: pointer;
@@ -158,7 +154,7 @@
 
         .content .cn a{
             text-decoration: none;
-            color: Black;
+            color: #000;
             transition: .3s ease;
         }
 
@@ -167,13 +163,13 @@
         }
 
         .content span{
-            color: black;
+            color: #64121f;
             font-size: 65px
         }
 
         .form{
             width: 250px;
-            height: 340px;
+            height: 360px;
             background: rgb(8, 43, 8);
             position: absolute;
             top: -20px;
@@ -181,7 +177,6 @@
             transform: translate(0%,-5%);
             border-radius: 10px;
             padding: 15px;
-            margin-left:0.005px;
         }
 
         .form h2{
@@ -267,11 +262,42 @@
         }
 
 
+                
+        .image {
+            position: relative;
+            z-index: -1000;
+            left: 37%;
+            
+            z-index: 10000;
+        }
+
+        .content-block {
+                width:90.4%;
+                background: #fff; 
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                margin-left: 20px; /* Aligns the block to the left */
+                margin-top: 50px; /* Top margin to push the block down */
+                margin-bottom: 20px; /* Space below the block */
+                font-size: 1.4em; /* Increased font size for better readability */
+                color: #333; /* Dark gray text for better readability */
+            }
+            h1 {
+                color: #4B0052; /* Stylish color for the heading */
+                margin-bottom: 10px; /* Space between the heading and the text */
+                font-size: 2em; /* Larger font size for heading */
+                margin-top: 50px;
+            }
+            p {
+                line-height: 1.6; /* Increased line height for better readability of paragraphs */
+            }
 
     </style>
 
 </head>
 <body>
+
+    <div class="overlay"></div>
 
     <div class="main">
         <div class="navbar">
@@ -283,24 +309,30 @@
             <div class="menu">
                 <ul>
                     <li><a href="">HOME</a></li>
-                    <li><a href="../g_view/about.php">ABOUT</a></li>
-                    <li><a href="../g-view/contact.php">CONTACT</a></li>
+                    <li><a href="../about.php">ABOUT</a></li>
+                    <li><a href="../contact.php">CONTACT</a></li>
                 </ul>
             </div>
 
         </div> 
         <div class="content">
-            <h1>Home maintenance Platform</h1>
-            <p class="par">Welcome to our Home maintenance Platform, 
-                <br>your one-stop solution, for all home maintenance needs. 
-                <br>Easily find and hire verified service providers, 
-                <br>submit service requests.Schedule regular maintenance, 
-                <br> and receive fast, reliable emergency services, 
-                <br>create personalized maintenance plans, and never miss,
-                <br>an appointment with our convenient reminders</p>
+        <div class="content-block">
+        <h1 style="margin-top: -10px;">Home Maintenance Platform</h1>
+        <p>
+            Welcome to our Home Maintenance Platform,<br>
+            your one-stop solution for all home maintenance needs.<br>
+            Easily find and hire verified service providers,<br>
+            submit service requests, schedule regular maintenance,<br>
+            and receive fast, reliable emergency services,<br>
+            create personalized maintenance plans, and never miss<br>
+            an appointment with our convenient reminders.
+        </p>
+        </div>
 
+        <div class="image">
+        <img src="https://rawcdn.githack.com/Lesliekonlack/images/79b67114225e83559bf4b3d15872374f250da910/workers.heic" style=    " transform: translateX(-20%); width: 520px; height: auto; object-fit: cover;" alt="Home Maintenance Worker">
+        </div>
 
-                <a href="../g_view/home_register.php"><button class="cn">JOIN US</button></a>
 
                 <form class="form" action="../action/login_action.php" method="POST">
                     <h2>Login Here</h2>
@@ -313,6 +345,9 @@
 
                     <p class="link">Don't have an account<br>
                     <a href="home_register.php">Sign up </a> here</a></p>
+                    <br>
+
+        <a  style= "margin-top: -10px; height: 100px:" href="../g_view/home_register.php"><button class="cn">JOIN US</button></a>
 
                 </form>
                     </div>
@@ -324,3 +359,4 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
+
