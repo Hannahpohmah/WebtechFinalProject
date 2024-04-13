@@ -13,21 +13,35 @@ if ($var_data) {
         $stmt1->execute();            
         $result_planName = $stmt1->get_result();
         $planName_row = $result_planName->fetch_assoc();
-        $planName = $planName_row['planName'];
+        if ($planName_row === NULL) {
+            $planName = ''; // Set planName to an empty string
+        } else {
+            $planName = $planName_row['planName'];
+        }
 
         $stmt2 = $conn->prepare("SELECT frequency_name FROM frequency WHERE id = ?");
         $stmt2->bind_param("i", $plan['frequency']);
         $stmt2->execute();
         $result_freqname = $stmt2->get_result();
         $freqname_row = $result_freqname->fetch_assoc();
-        $frequency = $freqname_row['frequency_name'];
+        if ($freqname_row === NULL) {
+            $freqname_row  = ''; // Set planName to an empty string
+        } else {
+            $frequency = $freqname_row['frequency_name'];
+        }
+  
 
         $stmt3 = $conn->prepare("SELECT category_name FROM servicecategories WHERE category_id = ?");
         $stmt3->bind_param("i", $plan['cid']);
         $stmt3->execute();
         $result_catname = $stmt3->get_result();
         $catname_row = $result_catname->fetch_assoc();
-        $category = $catname_row['category_name'];
+        if ($catname_row === NULL) {
+            $catname_row = ''; // Set planName to an empty string
+        } else {
+            $category = $catname_row['category_name'];
+        }
+       
 
         // Display the plan details
         
