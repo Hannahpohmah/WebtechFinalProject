@@ -330,7 +330,7 @@
         </div>
 
         <div class="image">
-        <img src="https://rawcdn.githack.com/Lesliekonlack/images/79b67114225e83559bf4b3d15872374f250da910/workers.heic" style=    " transform: translateX(-20%); width: 520px; height: auto; object-fit: cover;" alt="Home Maintenance Worker">
+        <img src="../g_img/workers.heic" style=    " transform: translateX(-20%); width: 520px; height: auto; object-fit: cover;" alt="Home Maintenance Worker">
         </div>
 
 
