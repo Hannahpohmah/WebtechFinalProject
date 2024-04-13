@@ -343,5 +343,3 @@ $UserName2 = $_SESSION['lname'];
     </script>
 
 </html>
-
-
