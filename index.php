@@ -330,7 +330,7 @@
         </div>
 
         <div class="image">
-        <img src="../g_img/workers.heic" style=    " transform: translateX(-20%); width: 520px; height: auto; object-fit: cover;" alt="Home Maintenance Worker">
+        <img src="./g_img/workers.png" style=    " transform: translateX(-20%); width: 520px; height: auto; object-fit: cover;" alt="Home Maintenance Worker">
         </div>
 
 
