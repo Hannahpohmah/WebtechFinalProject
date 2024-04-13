@@ -206,7 +206,7 @@ $UserName2 = $_SESSION['lname'];
                 if (result.isConfirmed) {
                     // Redirect to the edit form
                     window.location.href = "../g_view/edit_chore_view.php?id=" + planId ;
-                }window.location.href = "../g_view/maintenancePlans.php";
+                }
 
             });
         }
